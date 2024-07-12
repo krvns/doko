@@ -5,14 +5,14 @@ project:
 website:
   title: "Daughters of Knyaginya Olga"
   # For example, if your site is served from https://example.com/mysite/, then add:
-  # site-path: "/mysite/"
+  site-path: "/doko/"
   image: images/logo.png
   favicon: images/logo.png
   # page-footer: "Copyright 2024 𐫱 DOKO ©"
   # reader-mode: true
   site-url: https://d-oko.org
 
-  google-analytics: "UA-177339812-1"
+  google-analytics: "G-MYEC33ZB46"
   twitter-card: true
   #back-to-top-navigation: true
   page-navigation: false
