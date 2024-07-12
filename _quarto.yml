@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: _website
+  output-dir: _site
 
 website:
   title: "Daughters of Knyaginya Olga"
@@ -8,31 +8,111 @@ website:
   # site-path: "/mysite/"
   image: images/logo.png
   favicon: images/logo.png
-  page-footer: "Copyright 2024 𐫱 DOKO ©"
+  # page-footer: "Copyright 2024 𐫱 DOKO ©"
   # reader-mode: true
   site-url: https://d-oko.org
+
+  google-analytics: "UA-177339812-1"
+  twitter-card: true
+  #back-to-top-navigation: true
+  page-navigation: false
+  search: true
+  page-footer: 
+    background: "#F6F5F3"
+    center: Copyright 2024 𐫱 DOKO © 
+    # right:
+    #   - icon: github
+    #     href: https://github.com/krvns/doko
+
+  # navbar:
+  #   logo: images/logo.png
+  #   logo-href: ../index.html
+  #   left:
+  #     - href: donatins.qmd
+  #       text: Donate
+  #     - href: support.qmd
+  #       text: Suport
+  #   right:
+  #     - href: blog.qmd
+  #     - href: contact.qmd
+  #   tools:
+  #     - icon: twitter
+  #       href: https://twitter.com
+
   navbar:
+    search: true
+    title: false
     logo: images/logo.png
-    logo-href: ../index.html
+    background: "#F6F5F3"
+    logo-alt: "Daughters of Knyaginya Olga"
     left:
-      - href: donatins.qmd
+      - href: people/index.qmd
+        text: People
+      - href: support/index.qmd
         text: Donate
-      - href: support.qmd
-        text: Suport
+      - href: publications/index.qmd
+      - text: Public
+        href: public/index.qmd
+      - href: gallery/index.qmd
+        text: Gallery
+      - href: news/index.qmd
+      - href: contact.qmd
+        text: Contact
     right:
       - href: blog.qmd
       - href: contact.qmd
     tools:
       - icon: twitter
         href: https://twitter.com
-  sidebar: false
 
+  sidebar:
+#  link each group of sidebar entries with a navbar entry by matching their titles and listing the page linked from the navbar as the first content in the sidebar
+    - id: dmref
+      title: "NSF DMREF"
+      # logo: "images/dmref-logo.png"
+      logo-href: dmref/index.qmd #avail quarto v 1.5
+      contents: 
+        - href: dmref/index.qmd
+          text: Welcome to DMREF
+        - href: dmref/people/index.qmd
+          text: The DMREF Team
+        - href: dmref/publications/index.qmd
+          text: DMREF-Related Publications
+        - href: dmref/codes/index.qmd
+          text: Computer Codes
+        - href: dmref/data/index.qmd
+          text: Team Data
+
+    - id: empty-to-suppress-sidebars-on-other-pages
+
+
+
+
+  # sidebar: false
+
+# format:
+#   html:
+#     theme: 
+#       light: cosmo
+#       dark: slate
+#     css: styles.css
+#     toc: true
 format:
   html:
     theme: 
-      light: cosmo
-      dark: slate
-    css: styles.css
+      - styles/custom.scss
+      - yeti
+    mainfont: Nunito Sans
     toc: true
+    link-external-newwindow: true
+    date-format: "MMM YYYY"
+    smooth-scroll: true
+    resources:
+      - images
+
+
+  
+  
+
 
 

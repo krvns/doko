@@ -3,15 +3,13 @@ title: "Non profit Daughters of Knyaginya Olga"
 format:
   html:
     layout: page
-    # page-layout: article
+    page-layout: article
 sidebar: false
-page-layout: full
+# page-layout: full
 ---
-
-# 
 
 ![](images/logo.png){width="362"}
 
-## Workflow & diagram
+<p> Workflow & diagram </p>
 
 ![How we do it?](/diagrams/workflow.drawio.svg)
