@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: _website
+
+website:
+  title: "Daughters of Knyaginya Olga"
+  # For example, if your site is served from https://example.com/mysite/, then add:
+  # site-path: "/mysite/"
+  image: images/logo.png
+  favicon: images/logo.png
+  page-footer: "Copyright 2024 𐫱 DOKO ©"
+  # reader-mode: true
+  site-url: https://d-oko.org
+  navbar:
+    logo: images/logo.png
+    logo-href: ../index.html
+    left:
+      - href: donatins.qmd
+        text: Donate
+      - href: support.qmd
+        text: Suport
+    right:
+      - href: blog.qmd
+      - href: contact.qmd
+    tools:
+      - icon: twitter
+        href: https://twitter.com
+  sidebar: false
+
+format:
+  html:
+    theme: 
+      light: cosmo
+      dark: slate
+    css: styles.css
+    toc: true
+
+

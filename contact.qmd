@@ -1,0 +1,10 @@
+---
+title: "Contacts"
+about: 
+  id: contact
+  template: solana
+  image-shape: round
+  image: images/logo.png
+# page-layout: full
+---
+
